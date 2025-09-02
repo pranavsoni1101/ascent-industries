@@ -107,7 +107,7 @@ export default function Navbar() {
 
       {/* CTA + Theme Toggle */}
       <div className="flex items-center space-x-3 h-full">
-        <Button className="h-10 mr-3">Contact Us</Button>
+        <Button className="h-10 mr-3 bg-orange-400 hover:bg-orange-500">Contact Us</Button>
         <ThemeSwitcher />
       </div>
     </NavigationMenu>
