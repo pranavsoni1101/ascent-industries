@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Button } from "./ui/button";
 import { ThemeSwitcher } from "./theme-switcher";
+import { MessageCircle } from "lucide-react";
 
 // Centralized nav config
 const navLinks = {
@@ -40,7 +41,7 @@ export default function Navbar() {
   return (
     <NavigationMenu
       viewport={true}
-      className="px-12 py-4 bg-muted w-full max-w-none text-foreground @container"
+      className="px-12 py-4 bg-muted w-full max-w-none text-foreground @container border-b-2"
     >
       {/* Logo */}
       <div>
@@ -107,7 +108,10 @@ export default function Navbar() {
 
       {/* CTA + Theme Toggle */}
       <div className="flex items-center space-x-3 h-full">
-        <Button className="h-10 mr-3 bg-orange-400 hover:bg-orange-500">Contact Us</Button>
+        <Button className="h-10 mr-3 bg-orange-400 hover:bg-orange-500 text-white">
+          <MessageCircle className="h-5 w-5 inline-block" />
+          Talk to Us
+        </Button>
         <ThemeSwitcher />
       </div>
     </NavigationMenu>
