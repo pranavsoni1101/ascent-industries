@@ -102,10 +102,10 @@ const ServicesCarousel = () => {
 
               {/* Footer (optional CTA) */}
               <CardFooter className="px-4 pb-4 mt-auto">
-                <Link href={item.link} className="ml-auto">
+                <Link href={item.link} className="w-full">
                   <Button
                     variant={"outline"}
-                    className="mx-auto inline-flex items-center hover:bg-orange-50 text-orange-500 hover:text-orange-500 border-orange-500"
+                    className="w-full mx-auto inline-flex items-center hover:bg-orange-50 text-orange-500 hover:text-orange-500 border-orange-500"
                   >
                     Learn More
                     <ArrowRight className=" h-5 w-5" />
@@ -116,8 +116,8 @@ const ServicesCarousel = () => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="hover:bg-orange-50 text-orange-500 hover:text-orange-500 "/>
+      <CarouselNext className="hover:bg-orange-50 text-orange-500 hover:text-orange-500 "/>
     </Carousel>
     // </div>
   );
