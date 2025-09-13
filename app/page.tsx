@@ -73,7 +73,7 @@ const Home = () => {
 
             {/* Right: Counters in boxes */}
             <div className="grid grid-cols-2 gap-6">
-              <div className="bg-white shadow-md rounded-xl p-6 text-center">
+              <div className="bg-background shadow-md rounded-xl p-6 text-center">
                 <h3 className="text-4xl font-bold text-orange-500">
                   <Counter from={0} to={13} suffix="+" />
                 </h3>
@@ -81,7 +81,7 @@ const Home = () => {
                   Years of Experience
                 </p>
               </div>
-              <div className="bg-white shadow-md rounded-xl p-6 text-center">
+              <div className="bg-background shadow-md rounded-xl p-6 text-center">
                 <h3 className="text-4xl font-bold text-orange-500">
                   <Counter from={0} to={180} suffix="+" />
                 </h3>
@@ -94,14 +94,14 @@ const Home = () => {
 
           {/* Pillars Below */}
           <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
+            <div className="bg-background shadow-md rounded-xl p-6 text-center">
               <Settings className="mx-auto h-10 w-10 text-orange-500" />
               <h4 className="mt-4 text-lg font-semibold">Advanced CNC</h4>
               <p className="text-sm text-foreground/70">
                 Precision machining with cutting-edge technology.
               </p>
             </div>
-            <div className="text-center">
+            <div className="bg-background shadow-md rounded-xl p-6 text-center">
               <Factory className="mx-auto h-10 w-10 text-orange-500" />
               <h4 className="mt-4 text-lg font-semibold">
                 End-to-End Fabrication
@@ -110,14 +110,14 @@ const Home = () => {
                 From machining to sheet metal, all under one roof.
               </p>
             </div>
-            <div className="text-center">
+            <div className="bg-background shadow-md rounded-xl p-6 text-center">
               <Globe className="mx-auto h-10 w-10 text-orange-500" />
               <h4 className="mt-4 text-lg font-semibold">Global Standards</h4>
               <p className="text-sm text-foreground/70">
                 Delivering quality that meets international benchmarks.
               </p>
             </div>
-            <div className="text-center">
+            <div className="bg-background shadow-md rounded-xl p-6 text-center">
               <Handshake className="mx-auto h-10 w-10 text-orange-500" />
               <h4 className="mt-4 text-lg font-semibold">
                 Trusted Partnerships
