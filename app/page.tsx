@@ -2,7 +2,16 @@ import { Container } from "@/components/container";
 import { Counter } from "@/components/counter";
 import ServicesCarousel from "@/components/servicesCarousel";
 import { Button } from "@/components/ui/button";
-import { Factory, FileText, Globe, Handshake, Settings } from "lucide-react";
+import {
+  Award,
+  Factory,
+  FileText,
+  Globe,
+  Handshake,
+  Settings,
+  Users,
+} from "lucide-react";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -145,6 +154,54 @@ const Home = () => {
             </p>
           </div>
           <ServicesCarousel />
+        </Container>
+      </section>
+
+      {/* Quality Section */}
+      <section className="py-20 bg-muted/30">
+        <Container>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Left: Text */}
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+                Uncompromising Commitment to Quality
+              </h2>
+              <p className="text-foreground/80 mb-4">
+                At Ascent Industries, quality control is not an afterthought —
+                it’s built into every stage of production. Our skilled
+                technocrats monitor each process with precision, ensuring
+                adherence to{" "}
+                <span className="font-semibold">ISO 9001:2015</span> standards.
+              </p>
+              <p className="text-foreground/80 mb-6">
+                From raw material to finished product, we are dedicated to
+                delivering zero-defect components that exceed expectations,
+                tailored to each customer’s unique requirements.
+              </p>
+
+              {/* Badges */}
+              <div className="flex gap-4">
+                <div className="bg-background shadow-md rounded-lg px-4 py-2 flex items-center gap-2">
+                  <Award className="h-5 w-5 text-orange-500" />
+                  <span className="text-sm font-medium">Award Winning</span>
+                </div>
+                <div className="bg-background shadow-md rounded-lg px-4 py-2 flex items-center gap-2">
+                  <Users className="h-5 w-5 text-orange-500" />
+                  <span className="text-sm font-medium">Established Team</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Image */}
+            <div className="relative w-full h-80 rounded-xl overflow-hidden shadow-md">
+              <Image
+                src="https://images.pexels.com/photos/32845682/pexels-photo-32845682.jpeg"
+                alt="Quality inspection process"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
         </Container>
       </section>
     </>
