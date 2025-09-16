@@ -3,6 +3,7 @@ import { Container } from "@/components/container";
 import { Counter } from "@/components/counter";
 import FeatureHighlightMarquee from "@/components/marquee";
 import ServicesCarousel from "@/components/servicesCarousel";
+import TestimonialMarquee from "@/components/testimonialsMarquee";
 import { Button } from "@/components/ui/button";
 import { section } from "framer-motion/client";
 import {
@@ -212,6 +213,7 @@ const Home = () => {
         <FeatureHighlightMarquee />
       </section>
       <BrandShowcase />
+      <TestimonialMarquee />
       {/* <section className="py-20" >
 
       </section> */}
