@@ -1,7 +1,10 @@
+import BrandShowcase from "@/components/clientele";
 import { Container } from "@/components/container";
 import { Counter } from "@/components/counter";
+import FeatureHighlightMarquee from "@/components/marquee";
 import ServicesCarousel from "@/components/servicesCarousel";
 import { Button } from "@/components/ui/button";
+import { section } from "framer-motion/client";
 import {
   Award,
   Factory,
@@ -204,6 +207,14 @@ const Home = () => {
           </div>
         </Container>
       </section>
+
+      <section>
+        <FeatureHighlightMarquee />
+      </section>
+      <BrandShowcase />
+      {/* <section className="py-20" >
+
+      </section> */}
     </>
   );
 };
