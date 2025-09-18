@@ -31,9 +31,9 @@ const navLinks = {
     },
   ],
   about: [
-    { label: "Our Story", href: "/our-story" },
-    { label: "Infrastructure", href: "/infrastructure" },
-    { label: "Quality Policy", href: "/quality-policy" },
+    { label: "Our Story", href: "/about/our-story" },
+    { label: "Infrastructure", href: "/about/infrastructure" },
+    { label: "Quality Policy", href: "/about/quality-policy" },
   ],
 };
 
