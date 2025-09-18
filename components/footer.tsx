@@ -3,10 +3,33 @@
 import { Container } from "@/components/container";
 import { Facebook, Linkedin, Mail, Phone } from "lucide-react";
 import Link from "next/link";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
 
 const Footer = () => {
   return (
-    <footer className="dark bg-background text-gray-300 pt-12 pb-6 mt-16">
+    <footer className="dark bg-background text-gray-300 pb-6 ">
+      {/* CTA Section */}
+      <div className="bg-orange-400 text-white py-10">
+        <Container className="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h3 className="text-2xl font-bold">Have a project in mind?</h3>
+            <p className="text-sm opacity-90">Let’s build it together.</p>
+          </div>
+
+          <div className="flex w-full max-w-md items-center space-x-2">
+            <Input
+              type="email"
+              placeholder="Enter your email"
+              className="!bg-white/50 text-black !placeholder-black/70 !border-1 !border-orange-400 !focus:border-orange-500 focus:ring-0"
+            />
+            <Button className="bg-background hover:bg-gray-800 text-white">
+              Get a Quote
+            </Button>
+          </div>
+        </Container>
+      </div>
+
       <Container className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Brand */}
         <div>

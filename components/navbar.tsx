@@ -40,8 +40,8 @@ const navLinks = {
 export default function Navbar() {
   return (
     <NavigationMenu
-      viewport={true}
-      className="px-12 py-4 bg-muted w-full max-w-none text-foreground @container border-b-2"
+      // viewport={true}
+      className="px-12 py-4 bg-muted w-full max-w-none text-foreground @container border-b-2 sticky top-0 z-50"
     >
       {/* Logo */}
       <div>
