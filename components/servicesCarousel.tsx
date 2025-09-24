@@ -115,8 +115,8 @@ const ServicesCarousel = () => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="hover:bg-orange-50 text-orange-500 hover:text-orange-500 "/>
-      <CarouselNext className="hover:bg-orange-50 text-orange-500 hover:text-orange-500 "/>
+      <CarouselPrevious className="hidden sm:flex hover:bg-orange-50 text-orange-500 hover:text-orange-500" />
+      <CarouselNext className="hidden sm:flex hover:bg-orange-50 text-orange-500 hover:text-orange-500" />
     </Carousel>
     // </div>
   );
