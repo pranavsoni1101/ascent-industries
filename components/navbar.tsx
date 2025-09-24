@@ -49,7 +49,6 @@ export default function Navbar() {
 
   return (
     <div className="stick top-0 z-50">
-
       <NavigationMenu
         // viewport={true}
         className="px-12 hidden md:flex py-4 bg-muted w-full max-w-none text-foreground @container border-b-2"
@@ -69,7 +68,10 @@ export default function Navbar() {
         {/* Main Nav */}
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <NavigationMenuLink
+              asChild
+              className={navigationMenuTriggerStyle()}
+            >
               <Link href="/">Home</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
@@ -159,95 +161,89 @@ export default function Navbar() {
             </Link>
           </div>
         )} */}
-        {/* Mobile Navigation Toggle */}
-<div className="md:hidden bg-muted border-b">
-  <div className="flex items-center justify-between px-6 py-4">
-    <Link href="/" passHref>
-      <Image
-        src="/logo.png"
-        alt="Ascent Industries Logo"
-        width={150}
-        height={40}
-      />
-    </Link>
-    <button
-      onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-      className="p-2 text-foreground"
-    >
-      {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-    </button>
-  </div>
+      {/* Mobile Navigation Toggle */}
+      <div className="md:hidden bg-muted border-b">
+        <div className="flex items-center justify-between px-6 py-4">
+          <Link href="/" passHref>
+            <Image
+              src="/logo.png"
+              alt="Ascent Industries Logo"
+              width={150}
+              height={40}
+            />
+          </Link>
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="p-2 text-foreground"
+          >
+            {isMobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
+          </button>
+        </div>
 
-  {isMobileMenuOpen && (
-    <div className="px-6 pb-4 space-y-2">
-      <Link
-        href="/"
-        className="block py-2 font-medium hover:text-orange-500"
-        onClick={() => setIsMobileMenuOpen(false)}
-      >
-        Home
-      </Link>
+        {isMobileMenuOpen && (
+          <div className="px-6 pb-4 space-y-2">
+            <Link
+              href="/"
+              className="block py-2 font-medium hover:text-orange-500"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
 
-      {/* Accordion for Products & About */}
-      <Accordion type="single" collapsible className="w-full">
-        {/* Products */}
-        <AccordionItem value="products">
-          <AccordionTrigger className="text-foreground font-medium">
-            Products
-          </AccordionTrigger>
-          <AccordionContent className="pl-4 space-y-2">
-            {navLinks.products.map(({ label, href }) => (
-              <Link
-                key={href}
-                href={href}
-                className="block text-sm hover:text-orange-500"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {label}
-              </Link>
-            ))}
-          </AccordionContent>
-        </AccordionItem>
+            {/* Accordion for Products & About */}
+            <Accordion type="single" collapsible className="w-full">
+              {/* Products */}
+              <AccordionItem value="products">
+                <AccordionTrigger className="text-foreground font-medium">
+                  Products
+                </AccordionTrigger>
+                <AccordionContent className="pl-4 space-y-2">
+                  {navLinks.products.map(({ label, href }) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      className="block text-sm hover:text-orange-500"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </AccordionContent>
+              </AccordionItem>
 
-        {/* About */}
-        <AccordionItem value="about">
-          <AccordionTrigger className="text-foreground font-medium">
-            About Us
-          </AccordionTrigger>
-          <AccordionContent className="pl-4 space-y-2">
-            {navLinks.about.map(({ label, href }) => (
-              <Link
-                key={href}
-                href={href}
-                className="block text-sm hover:text-orange-500"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {label}
-              </Link>
-            ))}
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
-
-      {/* Other Links */}
-      <Link
-        href="/showcase"
-        className="block py-2 font-medium hover:text-orange-500"
-        onClick={() => setIsMobileMenuOpen(false)}
-      >
-        Showcase
-      </Link>
-      <Link
-        href="/contact"
-        className="block py-2 font-medium hover:text-orange-500"
-        onClick={() => setIsMobileMenuOpen(false)}
-      >
-        Contact Us
-      </Link>
-    </div>
-  )}
-</div>
-
+              {/* About */}
+              <AccordionItem value="about">
+                <AccordionTrigger className="text-foreground font-medium">
+                  About Us
+                </AccordionTrigger>
+                <AccordionContent className="pl-4 space-y-2">
+                  {navLinks.about.map(({ label, href }) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      className="block text-sm hover:text-orange-500"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+            <Link
+              href="/contact"
+              className="block py-2 font-medium hover:text-orange-500"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Contact Us
+            </Link>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
