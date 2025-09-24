@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/carousel";
 import {
   Card,
-  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -25,7 +24,7 @@ const items = [
     title: "CNC Machined Items",
     description:
       "Precision CNC parts manufactured with computer-controlled accuracy and superior quality.",
-    link: "#",
+    link: "/products/cnc-machined-items",
     image:
       "https://images.pexels.com/photos/48799/drill-milling-milling-machine-drilling-48799.jpeg",
   },
@@ -33,7 +32,7 @@ const items = [
     title: "Sheet Metal Components",
     description:
       "Flat sheet metals shaped into high-performance components for multiple industries.",
-    link: "#",
+    link: "/products/sheet-metal-components",
     image:
       "https://images.pexels.com/photos/29988981/pexels-photo-29988981.jpeg",
   },
@@ -41,14 +40,14 @@ const items = [
     title: "Special Parts",
     description:
       "Custom-designed components built with advanced manufacturing techniques.",
-    link: "#",
+    link: "/products/special-parts",
     image: "https://images.pexels.com/photos/3520696/pexels-photo-3520696.jpeg",
   },
   {
     title: "Agricultural Components",
     description:
       "High-quality, durable components designed specifically for the agriculture sector.",
-    link: "#",
+    link: "/products/special-parts",
     image:
       "https://images.pexels.com/photos/28833312/pexels-photo-28833312.jpeg",
   },
@@ -56,7 +55,7 @@ const items = [
     title: "Laser & CNC Turret Punched Parts",
     description:
       "Cutting-edge precision punching for highly accurate and customizable parts.",
-    link: "#",
+    link: "/products/laser-cnc-turret-punched-parts",
     image: "https://images.pexels.com/photos/7254413/pexels-photo-7254413.jpeg",
   },
 ];
