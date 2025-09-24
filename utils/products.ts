@@ -10,9 +10,9 @@ export const productsData = {
     `,
     heroVideo: "/cnc_prod_vid.mp4",
     gallery: [
-      "/images/products/cnc1.jpg",
-      "/images/products/cnc2.jpg",
-      "/images/products/cnc3.jpg",
+      "https://images.pexels.com/photos/8956445/pexels-photo-8956445.jpeg",
+      "https://images.pexels.com/photos/7018175/pexels-photo-7018175.jpeg",
+      "https://images.pexels.com/photos/5846176/pexels-photo-5846176.jpeg",
     ],
     highlights: [
       "High precision machining",
@@ -30,9 +30,9 @@ export const productsData = {
     `,
     heroVideo: "/sheet_metal_prod_vid.mp4",
     gallery: [
-      "/images/products/sheet1.jpg",
-      "/images/products/sheet2.jpg",
-      "/images/products/sheet3.jpg",
+      "https://images.pexels.com/photos/7789871/pexels-photo-7789871.jpeg",
+      "https://images.pexels.com/photos/7965431/pexels-photo-7965431.jpeg",
+      "https://images.pexels.com/photos/31410815/pexels-photo-31410815.jpeg",
     ],
     highlights: [
       "Lightweight yet durable",
@@ -50,9 +50,9 @@ export const productsData = {
     `,
     heroVideo: "/custom_prod_vid.mp4",
     gallery: [
-      "/images/products/special1.jpg",
-      "/images/products/special2.jpg",
-      "/images/products/special3.jpg",
+      "https://images.pexels.com/photos/9607395/pexels-photo-9607395.jpeg",
+      "https://images.pexels.com/photos/6263114/pexels-photo-6263114.jpeg",
+      "https://images.pexels.com/photos/18117755/pexels-photo-18117755.jpeg",
     ],
     highlights: [
       "Tailor-made to client requirements",
@@ -70,9 +70,9 @@ export const productsData = {
     `,
     heroVideo: "/laser_prod_vid.mp4",
     gallery: [
-      "/images/products/laser1.jpg",
-      "/images/products/laser2.jpg",
-      "/images/products/laser3.jpg",
+      "https://images.pexels.com/photos/29988987/pexels-photo-29988987.jpeg",
+      "https://images.pexels.com/photos/9908745/pexels-photo-9908745.jpeg",
+      "https://images.pexels.com/photos/29988988/pexels-photo-29988988.jpeg",
     ],
     highlights: [
       "Laser cutting up to 25mm MS and 16mm SS",
