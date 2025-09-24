@@ -5,7 +5,6 @@ import FeatureHighlightMarquee from "@/components/marquee";
 import ServicesCarousel from "@/components/servicesCarousel";
 import TestimonialMarquee from "@/components/testimonialsMarquee";
 import { Button } from "@/components/ui/button";
-import { section } from "framer-motion/client";
 import {
   Award,
   Factory,

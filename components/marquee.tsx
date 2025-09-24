@@ -31,8 +31,8 @@ const FeatureHighlightMarquee = () => {
       <Marquee className=" bg-background py-4 border-t border-b border-gray-300">
         <MarqueeContent>
           {items.map((item, idx) => (
-            <MarqueeItem>
-              <span key={idx} className="mx-8 flex items-center text-lg font-medium">
+            <MarqueeItem key={idx}>
+              <span  className="mx-8 flex items-center text-lg font-medium">
                 {item.icon}
                 {item.text}
               </span>
