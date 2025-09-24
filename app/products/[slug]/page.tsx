@@ -42,12 +42,12 @@ const ProductPage = () => {
       </section>
 
       {/* Highlights */}
-      <section className="py-12 bg-background">
+      <section className="bg-background">
         <Container className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {product.highlights.map((point, idx) => (
             <div
               key={idx}
-              className="p-6 border rounded-xl shadow-sm text-center bg-muted/10"
+              className="p-6 border border-orange-500 rounded-xl shadow-sm text-center bg-muted/10"
             >
               <CheckCircle2 className="h-8 w-8 mx-auto text-orange-500 mb-4" />
               <p className="text-sm text-foreground/70">{point}</p>
