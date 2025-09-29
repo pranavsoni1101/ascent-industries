@@ -33,7 +33,7 @@ const navLinks = {
     },
     { label: "Special Parts", href: "/products/special-parts" },
     {
-      label: "Laser and CNC Turret Punched Parts",
+      label: "Laser & CNC Turret Punched Parts",
       href: "/products/laser-cnc-turret-punched-parts",
     },
   ],
@@ -48,7 +48,7 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   return (
-    <div className="stick top-0 z-50">
+    <div className="sticky top-0 z-50">
       <NavigationMenu
         // viewport={true}
         className="px-12 hidden md:flex py-4 bg-muted w-full max-w-none text-foreground @container border-b-2"
@@ -181,6 +181,7 @@ export default function Navbar() {
               height={40}
             />
           </Link>
+          {/* <ThemeSwitcher /> */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="p-2 text-foreground"
@@ -195,6 +196,8 @@ export default function Navbar() {
 
         {isMobileMenuOpen && (
           <div className="px-6 pb-4 space-y-2">
+            <ThemeSwitcher />
+
             <Link
               href="/"
               className="block py-2 font-medium hover:text-orange-500"
