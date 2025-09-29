@@ -5,6 +5,7 @@ import { Facebook, Linkedin, Mail, Phone } from "lucide-react";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -30,10 +31,15 @@ const Footer = () => {
         </Container>
       </div>
 
-      <Container className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <Container className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand */}
         <div>
-          <h3 className="text-xl font-bold text-white">Ascent Industries</h3>
+          <Image
+            src="/logo.png"
+            alt="Ascent Industries Logo"
+            width={200}
+            height={50}
+          />
           <p className="mt-2 text-sm text-gray-400">
             Precision That Powers Industries since 2011.
           </p>
@@ -48,19 +54,58 @@ const Footer = () => {
                 About Us
               </Link>
             </li>
-            {/* <li>
-              <Link href="/services" className="hover:text-orange-400">
-                Services
-              </Link>
-            </li> */}
             <li>
-              <Link href="/about/quality-policy" className="hover:text-orange-400">
+              <Link
+                href="/about/quality-policy"
+                className="hover:text-orange-400"
+              >
                 Quality
               </Link>
             </li>
             <li>
               <Link href="/contact" className="hover:text-orange-400">
                 Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Projects / Services */}
+        <div>
+          <h4 className="text-lg font-semibold text-white mb-4">
+            Our Services
+          </h4>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <Link
+                href="/products/cnc-machined-items"
+                className="hover:text-orange-400"
+              >
+                CNC Machined Items
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/products/sheet-metal-components"
+                className="hover:text-orange-400"
+              >
+                Sheet Metal Components
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/products/special-parts"
+                className="hover:text-orange-400"
+              >
+                Special Parts
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/products/laser-cnc-turret-punched-parts"
+                className="hover:text-orange-400"
+              >
+                Laser & CNC Turret Punched Parts
               </Link>
             </li>
           </ul>

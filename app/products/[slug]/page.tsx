@@ -58,7 +58,7 @@ const ProductPage = () => {
 
       {/* Gallery */}
       <section className="py-12 bg-muted/20">
-        <Container className="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <Container className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {product.gallery.map((img, idx) => (
             <div
               key={idx}
