@@ -75,7 +75,7 @@ export const productsData = {
       "https://images.pexels.com/photos/29988988/pexels-photo-29988988.jpeg",
     ],
     highlights: [
-      "Laser cutting up to 25mm MS and 16mm SS",
+      "Laser cutting capacity: 25mm MS, 16mm SS, 10mm Aluminum, 10mm Brass",
       "Fast, accurate, and repeatable results",
       "Bulk and custom production capabilities",
     ],
