@@ -78,7 +78,7 @@ const About = () => {
                 We Create Structural Beauty Through Innovation
               </h2>
               <p className="text-foreground/80 mb-4">
-                Founded by Sanjay Verma, a seasoned expert with over 25 years in
+                Founded by Sanjay Verma, a seasoned expert with over 34 years in
                 manufacturing, Ascent Industries has grown into a trusted name
                 in precision engineering. With deep expertise in CNC machining,
                 milling, and grinding, we deliver reliable import substitutes
@@ -142,7 +142,7 @@ const About = () => {
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-background shadow-md rounded-xl p-6 text-center">
                   <h3 className="text-4xl font-bold text-orange-500">
-                    <Counter from={0} to={13} suffix="+" />
+                    <Counter from={0} to={14} suffix="+" />
                   </h3>
                   <p className="mt-2 text-sm font-medium text-foreground/70">
                     Years of Experience
@@ -150,7 +150,7 @@ const About = () => {
                 </div>
                 <div className="bg-background shadow-md rounded-xl p-6 text-center">
                   <h3 className="text-4xl font-bold text-orange-500">
-                    <Counter from={0} to={180} suffix="+" />
+                    <Counter from={0} to={350} suffix="+" />
                   </h3>
                   <p className="mt-2 text-sm font-medium text-foreground/70">
                     Projects Delivered

@@ -90,6 +90,54 @@ const QualityPolicy = () => {
               involvement at every stage of production.
             </p>
           </div>
+          {/* Quality Policy Statement */}
+          <div className="max-w-4xl mx-auto mt-10">
+            <div className="bg-background border rounded-xl shadow-md p-6 sm:p-8 text-left">
+              <h3 className="text-2xl font-bold mb-3">QUALITY POLICY</h3>
+
+              <p className="text-foreground/80 leading-relaxed">
+                We at <span className="font-semibold">Ascent Industrial Manufacturers Pvt. Ltd. (AIMPL)</span> aspire to be the
+                trustworthy manufacturer and supplier of <span className="font-semibold">Precision Machined Components</span> and{" "}
+                <span className="font-semibold">Sheet Metal Fabricated Parts</span>.
+              </p>
+
+              <p className="mt-4 text-foreground/80 font-medium">We commit ourselves to:</p>
+
+              <ul className="mt-3 space-y-2 text-foreground/80 list-disc pl-6">
+                <li>
+                  Satisfying the needs of our customers, including that of the automotive sector.
+                </li>
+                <li>
+                  Ensuring we supply quality products on time while following all legal requirements.
+                </li>
+                <li>
+                  Continually improving our functional coordination and processes.
+                </li>
+                <li>
+                  Complying with system elements like Quality Management System and IATF standards.
+                </li>
+                <li>
+                  Following lean principles, poka-yoke, visual control, and 5S.
+                </li>
+                <li>
+                  Building a team through JDs and KRAs.
+                </li>
+              </ul>
+
+              <p className="mt-5 text-foreground/80 leading-relaxed">
+                The Quality Policy and Objectives with trends shall be communicated and understood within the organization and
+                reviewed in Management Review Meetings for their continuing suitability and implementation of the Quality
+                Management System effectively.
+              </p>
+
+              <div className="mt-6 pt-5 border-t">
+                <p className="text-orange-500 font-semibold">
+                  Quality First – System Must – Customer Connects Just
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {pillars.map((p, idx) => (
               <div

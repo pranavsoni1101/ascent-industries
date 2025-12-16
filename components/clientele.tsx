@@ -8,12 +8,13 @@ const brands = [
   { name: "Methodex", logo: "/methodex.png" },
   { name: "VE Commercial Vehicles", logo: "/ve-commercial-vehicles.png" },
   { name: "Jash", logo: "/jash.png" },
-  { name: "Metalman", logo: "/metalman.png" },
+  { name: "Metalman", logo: "/metalman-logo.svg" },
   { name: "Caparo", logo: "/caparo.png" },
   { name: "Erawat Pharma", logo: "/erawat.png" },
   { name: "Fort Caps", logo: "/fort-caps.png" },
   { name: "Diversitech", logo: "/diversitech.png" },
   { name: "Gatiman Auto", logo: "/gatiman.png" },
+  { name: "John Deere", logo: "/john-deere.svg" },
 ];
 
 const BrandShowcase = () => {
