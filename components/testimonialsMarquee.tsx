@@ -1,83 +1,47 @@
-"use client";
+import TestimonialsComponent from "./testimonialComponent"
+import type { TestimonialItem } from "./testimonialComponent";
 
-import {
-  Marquee,
-  MarqueeContent,
-  MarqueeItem,
-} from "@/components/ui/shadcn-io/marquee";
-import {
-  Card,
-  CardHeader,
-  CardContent,
-  CardFooter,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/card";
-import { Quote } from "lucide-react";
-
-const testimonials = [
+const testimonials: TestimonialItem[] = [
   {
-    quote:
-      "I just wanted to take a moment and express how impressed we are with the quality of the parts we received from Ascent Industries. We have worked with many suppliers in the past, but Ascent stands out in terms of quality and exceptional customer service.",
-    name: "Deepak Mathur",
-    role: "Industrial Manufacturing",
+    name: 'Rajesh Verma',
+    role: 'QA Engineer',
+    company: 'Manufacturing Partner',
+    avatar: 'https://ui-avatars.com/api/?name=Rajesh+Verma&background=FFEDD5&color=F97316',
+    rating: 5,
+    content:
+      "I have been thoroughly satisfied with the work done by your team and would like to continue sending more projects your way. I’m confident that as we continue working together, the partnership will only get stronger."
   },
   {
-    quote:
-      "I am thrilled with the quality of the products from Ascent Industries. The product manager was equally impressed and gave great feedback on how everything looked. Thank you for delivering top-notch products!",
-    name: "Sumit Solanki",
-    role: "Industrial Manager",
+    name: 'Deepak Mathur',
+    role: 'Industrial Manufacturing',
+    company: 'Automotive Supplier',
+    avatar: 'https://ui-avatars.com/api/?name=Deepak+Mathur&background=FFEDD5&color=F97316',
+    rating: 5,
+    content:
+      "I just wanted to take a moment and express how impressed we are with the quality of the parts we received from Ascent Industries. We have worked with many suppliers in the past, but Ascent stands out in terms of quality and exceptional customer service."
   },
   {
-    quote:
-      "We are extremely pleased with the quality of the boxes produced by Ascent Industries. Even though it was a complex project, the end result exceeded our expectations. I highly recommend them for their exceptional work.",
-    name: "Dipesh Mehta",
-    role: "Product Manager",
+    name: 'Sumit Solanki',
+    role: 'Industrial Manager',
+    company: 'Production Operations',
+    avatar: 'https://ui-avatars.com/api/?name=Sumit+Solanki&background=FFEDD5&color=F97316',
+    rating: 5,
+    content:
+      "I am thrilled with the quality of the products from Ascent Industries. The product manager was equally impressed and gave great feedback on how everything looked. Thank you for delivering top-notch products!"
   },
   {
-    quote:
-      "I have been thoroughly satisfied with the work done by your team and would like to continue sending more projects your way. I’m confident that as we continue working together, the partnership will only get stronger.",
-    name: "Rajesh Verma",
-    role: "QA Engineer",
-  },
-];
+    name: 'Dipesh Mehta',
+    role: 'Product Manager',
+    company: 'Industrial Systems',
+    avatar: 'https://ui-avatars.com/api/?name=Dipesh+Mehta&background=FFEDD5&color=F97316',
+    rating: 5,
+    content:
+      "We are extremely pleased with the quality of the boxes produced by Ascent Industries. Even though it was a complex project, the end result exceeded our expectations. I highly recommend them for their exceptional work."
+  }
+]
 
-const TestimonialMarquee = () => {
-  return (
-    <section className="py-20 bg-muted/30">
-      {/* Section Heading */}
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
-        What Our Clients Say
-      </h2>
+const TestimonialsComponentPage = () => {
+  return <TestimonialsComponent testimonials={testimonials} />
+}
 
-      {/* Scrolling Testimonials */}
-      <Marquee className="overflow">
-        <MarqueeContent >
-          {testimonials.map((t, idx) => (
-            <MarqueeItem key={idx} className="h-full w-full">
-                <Card className="border-none max-w-xl w- full h-xl shadow-orange-500">
-                    <CardHeader>
-                      <Quote className="h-6 w-6 text-orange-500" />
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-foreground/80 italic">“{t.quote}”</p>
-                    </CardContent>
-                    <CardFooter>
-                        <CardTitle className="text-sm font-semibold text-orange-500">
-                            {t.name}
-                        </CardTitle>
-                        <CardDescription className="text-xs text-foreground/60">
-                            {t.role}
-                        </CardDescription>
-                        <Quote className="h-6 w-6 text-orange-500 ml-auto" />
-                    </CardFooter>
-                </Card>
-            </MarqueeItem>
-          ))}
-        </MarqueeContent>
-      </Marquee>
-    </section>
-  );
-};
-
-export default TestimonialMarquee;
+export default TestimonialsComponentPage

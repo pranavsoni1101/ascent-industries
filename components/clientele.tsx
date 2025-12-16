@@ -14,7 +14,7 @@ const brands = [
   { name: "Fort Caps", logo: "/fort-caps.png" },
   { name: "Diversitech", logo: "/diversitech.png" },
   { name: "Gatiman Auto", logo: "/gatiman.png" },
-  {name: "John Deere", logo: "/john-deere.svg" },
+  { name: "John Deere", logo: "/john-deere.svg" },
 ];
 
 const BrandShowcase = () => {
